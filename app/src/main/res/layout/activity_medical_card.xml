@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF7F8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MediQR"
+            android:textColor="#FF3355"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emergency Medical Card"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Medical Card -->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+
+                <!-- Name -->
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anshika Mishra"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#0B1437"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"/>
+
+                <!-- Age -->
+
+                <TextView
+                    android:id="@+id/txtAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age : 20"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"/>
+
+                <!-- Blood Group -->
+
+                <TextView
+                    android:id="@+id/txtBlood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Group : O+"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FF3355"
+                    android:layout_marginTop="20dp"/>
+
+                <!-- Allergies -->
+
+                <TextView
+                    android:id="@+id/txtAllergies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Allergies : None"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"/>
+
+                <!-- Medicines -->
+
+                <TextView
+                    android:id="@+id/txtMedicine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Medicines : None"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"/>
+
+                <!-- Emergency Contact -->
+
+                <TextView
+                    android:id="@+id/txtEmergency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Emergency Contact : 9876543210"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Generate QR Button -->
+
+        <Button
+            android:id="@+id/btnGenerateQR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generate QR"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#FF3355"
+            android:layout_marginTop="25dp"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
